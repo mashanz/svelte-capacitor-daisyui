@@ -8,7 +8,8 @@ const config: CapacitorConfig = {
 		androidScheme: 'https'
 	},
 	ios: {
-		contentInset: 'always'
+		contentInset: 'always',
+		preferredContentMode: 'mobile'
 	}
 };
 
