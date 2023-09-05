@@ -10,7 +10,7 @@
 			<div class="card card-body bg-white">Banner</div>
 		</div>
 		<!-- Sidebar content here -->
-		<button on:click={() => goto('/app/beranda')} class="p-4 text-left">🏠 Beranda</button>
+		<button on:click={() => goto('/app')} class="p-4 text-left">🏠 Beranda</button>
 		<button on:click={() => goto('/app/jelajah')} class="p-4 text-left">🔍 Jelajah</button>
 		<button on:click={() => goto('/app/notifikasi')} class="p-4 text-left">🔔 Notifikasi</button>
 		<button on:click={() => goto('/app/pesan')} class="p-4 text-left">📩 Pesan</button>
