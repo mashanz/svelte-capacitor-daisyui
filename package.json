@@ -12,7 +12,15 @@
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
 		"format": "prettier --plugin-search-dir . --write .",
 		"test:integration": "playwright test",
-		"test:unit": "vitest"
+		"test:unit": "vitest",
+		"run:android": "vite build && cap copy android && cap run android",
+		"run:ios": "vite build && cap copy ios && cap run ios",
+		"build:android": "vite build && cap copy android && cd android && ./gradlew bundleRelease",
+		"build:ios": "vite build && cap copy ios && xcodebuild -project ./ios/App/App.xcodeproj -allowProvisioningUpdates",
+		"copy:ios": "cap copy ios",
+		"copy:android": "cap copy android",
+		"sync:ios": "cap sync ios",
+		"sync:android": "cap sync android"
 	},
 	"devDependencies": {
 		"@capacitor/android": "^5.3.0",
