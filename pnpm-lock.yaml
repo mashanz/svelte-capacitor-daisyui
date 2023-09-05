@@ -5,12 +5,18 @@ settings:
   excludeLinksFromLockfile: false
 
 devDependencies:
+  '@capacitor/android':
+    specifier: ^5.3.0
+    version: 5.3.0(@capacitor/core@5.3.0)
   '@capacitor/cli':
     specifier: ^5.3.0
     version: 5.3.0
   '@capacitor/core':
     specifier: ^5.3.0
     version: 5.3.0
+  '@capacitor/ios':
+    specifier: ^5.3.0
+    version: 5.3.0(@capacitor/core@5.3.0)
   '@playwright/test':
     specifier: ^1.28.1
     version: 1.37.1
@@ -66,6 +72,14 @@ packages:
       '@jridgewell/trace-mapping': 0.3.19
     dev: true
 
+  /@capacitor/android@5.3.0(@capacitor/core@5.3.0):
+    resolution: {integrity: sha512-5rEwD8u0whGXP+dZ0qXRFP3DWHi4WhZdzcxxZ/D4mLh5eVaQCxPpoHBcrS4FpKtl7PAWNDD2n32D9YrEcfERMA==}
+    peerDependencies:
+      '@capacitor/core': ^5.3.0
+    dependencies:
+      '@capacitor/core': 5.3.0
+    dev: true
+
   /@capacitor/cli@5.3.0:
     resolution: {integrity: sha512-ku23HPqUHUnSgo/SyEWxVviEAxb4ieWvAVMI3KfrrBoinAhTOvNSZwT346rIpxZ9Xj3Qp41UjdIz0ME+DYwhfA==}
     engines: {node: '>=16.0.0'}
@@ -96,6 +110,14 @@ packages:
     resolution: {integrity: sha512-mvhh1yJtcUTZ0hUUriBKKpxq47hn75bjxH3tYPRgAFu1z3gowCg+OtG4Rce3W5gr5fSfCjQgOSL0Vp7k9hPUWw==}
     dependencies:
       tslib: 2.6.2
+    dev: true
+
+  /@capacitor/ios@5.3.0(@capacitor/core@5.3.0):
+    resolution: {integrity: sha512-AxcW6kp2dOhJ7D6Jz7FAiVi+tq8rv3K3VrfZ0rcGJGlqZfrOJ1m8ImcQ7cO9Fec7wf7a/XSwMOqWemYZFLOO8w==}
+    peerDependencies:
+      '@capacitor/core': ^5.3.0
+    dependencies:
+      '@capacitor/core': 5.3.0
     dev: true
 
   /@esbuild/android-arm64@0.18.20:
