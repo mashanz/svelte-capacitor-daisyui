@@ -1,9 +1,14 @@
 <script>
 	import { page } from '$app/stores';
 	import { goto } from '$app/navigation';
+	import Header from '$lib/components/Header.svelte';
+	import FloatingButton from '$lib/components/FloatingButton.svelte';
+	import Drawer from '$lib/components/Drawer.svelte';
 </script>
 
-<main class="h-screen w-full bg-base-200 flex">
+<main class="h-screen w-full bg-base-200 flex flex-col drawer">
+	<Drawer />
+	<Header />
 	<slot />
 	<div class="btm-nav">
 		<button on:click={() => goto('/app/')} class:active={$page.url.pathname === '/app'}>
@@ -27,4 +32,5 @@
 			<span class="btm-nav-label">Pesan</span>
 		</button>
 	</div>
+	<FloatingButton />
 </main>

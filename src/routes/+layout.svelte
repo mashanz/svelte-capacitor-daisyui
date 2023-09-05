@@ -8,4 +8,6 @@
 	});
 </script>
 
-<slot />
+<main class="bg-base-200 h-screen w-full">
+	<slot />
+</main>
